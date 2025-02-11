@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Compra y venta de coches clásicos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="coches, clasicos, comprar, vender, tasacion">
+        <meta name="author" content="Martín Rubio">
+        <meta name="lang" content="es">
+        <meta name="revisit-after" content="2 days">
+        <meta name="format-detection" content="telephone=no,address=no,email=no">
+
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+        <script src="../js/script.js"></script>
+        
+        <title>Coches Clásicos | Compra y venta de vehículos históricos</title>
+    </head>
+    <body>
+        <header>
+            <div id="div_header">
+                <h1>Coches Clásicos</h1>
+                <div id="div_menu">
+                    <span class="boton"><a class="boton_menu" href="index.html">Inicio</a></span>
+                    <span class="boton"><a class="boton_menu" href="productos.html">Productos</a></span>
+                    <span class="botonin"><a class="boton_menu" href="#">Presupuesto</a></span>
+                    <span class="boton"><a class="boton_menu" href="contacto.html">Contacto</a></span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div id="div_section">
+                <h2>Presupuesto</h2>
+
+                <!--formulario que el cliente rellena con sus datos para pedir información específica para sus intereses-->
+
+                <form name="presupuesto" id="presupuesto" method="post" action="post">
+                    <div id="div_box1">
+                        <div id="div_box2">
+                            <p><label>Nombre:</label></p>
+                            <p><label>E-mail:</label></p>
+                            <p><label>Teléfono:</label></p>
+                            <p><label>Información adicional:</label></p>
+                        </div>
+                        
+                        <p><input class="campo" type="text" name="nombre" id="nombre" required></p>
+                        <p><input class="campo" type="email" name="email" id="email" required></p>
+                        <p><input class="campo" type="tel" name="telefono" id="telefono" required></p>
+                        <p><textarea name="info" id="info" cols="35" rows="6"></textarea></p>
+                        
+                        <div id="div_box3">
+                            <label>Acepto las políticas de privacidad de la empresa</label>
+                            <input type="checkbox" name="politica" id="politica" required>
+                        </div>
+
+                        <div>
+                            <input class="boton_form" type="submit" name="enviar" id="enviar" value="Enviar">
+                            <input class="boton_form" type="reset" name="borrar" id="borrar" value="Borrar">
+                        </div>
+                         
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div id="div_footer">
+                <span class="center_text">© 2025 Coches clásicos | Calle Alonso Cano 44, 28003</span>
+                <span class="footer_icon">
+                    <img src="../img/instagram.png" alt="logo instagram">
+                </span>
+                <span class="footer_icon">
+                    <img src="../img/youtube.png" alt="logo youtube">
+                </span>
+                <span class="footer_icon_x">
+                    <img src="../img/xtwitter.png" alt="logo x">
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>
