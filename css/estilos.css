@@ -53,13 +53,13 @@ h2 {
 }
 
 .footer_icon,.footer_icon_x{
+    width: 50px;
+    height: 50px;
     border-radius: 49%;
     border: solid 1px white;
     position: relative; 
     float: right; 
     background-color: white;
-    width: 50px;
-    height: 50px;
     margin: 10px;
 }
 
@@ -68,8 +68,8 @@ h2 {
 }
 
 #div_footer img{
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 #div_menu {
@@ -116,8 +116,7 @@ h2 {
 }
 
 .boton:hover {
-    background-color: #DAD2FF;
-    
+    background-color: #DAD2FF;   
 }
 
 .botonin {
@@ -131,6 +130,8 @@ h2 {
     border: 2px solid black;
     text-decoration: none;
 }
+
+/*estilos de la galeria del index*/
 
 .div_producto {
     border: solid 1px black;
@@ -163,6 +164,8 @@ h2 {
     background-color: #B2A5FF;
 }
 
+/*estilos de la galeria de producto*/
+
 .div_restaurado {
     border: solid 1px black;
     border-radius: 10px;
@@ -183,6 +186,8 @@ h2 {
     border-radius: 10px;
 }
 
+/*cajas del formulario de presupuesto.html*/
+
 #div_box1 {
     width: 460px;
     height: 340px; 
@@ -201,7 +206,7 @@ h2 {
     float: left;
 }
 
-.campo {
+.campo,.campo_precio {
     float: left;
     width: 200px;
     margin-top: 15px;
@@ -230,6 +235,30 @@ h2 {
     text-align: center;
 }
 
+/*box 4 y 5 son las del formulario del index*/
+
+#div_box4 {
+    position:relative;
+    top:18px;
+    display: inline-block;
+    text-align: left;
+}
+
+.div_box4_campo {
+    display: block;
+}
+
+#div_box5 {
+    width: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    background-color: #B2A5FF;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
 #div_contacto{
     position: relative;
     display: inline-block;
@@ -240,6 +269,7 @@ h2 {
     border: solid 1px black;
     position: relative;
     width: 1000px;
+    height: 600px;
     margin: 20px auto;
     display: block;
 }

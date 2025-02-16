@@ -10,9 +10,7 @@
         <meta name="revisit-after" content="2 days">
         <meta name="format-detection" content="telephone=no,address=no,email=no">
 
-        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
-
-        <script src="./js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
         
         <title>Coches Clásicos | Compra y venta de vehículos históricos</title>
     </head>
@@ -21,10 +19,10 @@
             <div id="div_header">
                 <h1>Coches Clásicos</h1>
                 <div id="div_menu">
-                    <span class="boton"><a class="boton_menu" href="index.html">Inicio</a></span>
-                    <span class="boton"><a class="boton_menu" href="productos.html">Productos</a></span>
+                    <span class="boton"><a class="boton_menu" href="../index.html">Inicio</a></span>
+                    <span class="boton"><a class="boton_menu" href="./productos.html">Productos</a></span>
                     <span class="botonin"><a class="boton_menu" href="#">Presupuesto</a></span>
-                    <span class="boton"><a class="boton_menu" href="contacto.html">Contacto</a></span>
+                    <span class="boton"><a class="boton_menu" href="./contacto.html">Contacto</a></span>
                 </div>
             </div>
         </header>
@@ -44,9 +42,11 @@
                             <p><label>Información adicional:</label></p>
                         </div>
                         
-                        <p><input class="campo" type="text" name="nombre" id="nombre" required></p>
+                        <!--añadido pattern a los campos del formulario-->
+
+                        <p><input class="campo" type="text" name="nombre" id="nombre" pattern="[A-Za-z]*\s?[A-za-z]*\s?[A-za-z]*" required></p>
                         <p><input class="campo" type="email" name="email" id="email" required></p>
-                        <p><input class="campo" type="tel" name="telefono" id="telefono" required></p>
+                        <p><input class="campo" type="tel" name="telefono" id="telefono" pattern="\d{9}" required></p>
                         <p><textarea name="info" id="info" cols="35" rows="6"></textarea></p>
                         
                         <div id="div_box3">
@@ -68,13 +68,13 @@
             <div id="div_footer">
                 <span class="center_text">© 2025 Coches clásicos | Calle Alonso Cano 44, 28003</span>
                 <span class="footer_icon">
-                    <img src="./img/instagram.png" alt="logo instagram">
+                    <img src="../images/instagram.png" width="50" height="50" alt="logo instagram">
                 </span>
                 <span class="footer_icon">
-                    <img src="./img/youtube.png" alt="logo youtube">
+                    <img src="../images/youtube.png" width="50" height="50" alt="logo youtube">
                 </span>
                 <span class="footer_icon_x">
-                    <img src="./img/xtwitter.png" alt="logo x">
+                    <img src="../images/xtwitter.png" width="50" height="50" alt="logo x">
                 </span>
             </div>
         </footer>
