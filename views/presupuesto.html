@@ -45,7 +45,7 @@
                         <!--añadido pattern a los campos del formulario-->
 
                         <p><input class="campo" type="text" name="nombre" id="nombre" pattern="[A-Za-z]*\s?[A-za-z]*\s?[A-za-z]*" required></p>
-                        <p><input class="campo" type="email" name="email" id="email" required></p>
+                        <p><input class="campo" type="email" name="email" id="email" pattern="[^\s]+@[^\s]+[.][A-Za-z]{2,}" required></p>
                         <p><input class="campo" type="tel" name="telefono" id="telefono" pattern="\d{9}" required></p>
                         <p><textarea name="info" id="info" cols="35" rows="6"></textarea></p>
                         
