@@ -9,262 +9,148 @@
     padding: 0;
 }
 
-.wrapper {
-    display:grid;
-    grid-template-rows: 100px auto 1fr;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main";
-}
-
-html, body{
-    font-size: 13px;
-    color: black;
+html {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+.wrapper {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+:where(body) {
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 header {
-    grid-area: header;
-    background: #dad2ff;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
-    grid-area: nav;
-    background: #493d9e;
+    background: #9999ff;
 }
-
-main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.aboutus {
-    padding-bottom: 20px;
-}
-
-h1, h2, h3 {
-    padding: 30px;
-}
-
-ul {
-    list-style: none;
-    line-height: 30px;
-    text-align: left;
-}
-
-nav ul {
-    display:flex;
-    justify-content:left;
-}
-
-nav a{
-    color: white;
-    text-decoration:none;
-    padding: 14px 20px;
-    display: inline-block;
-}
-
-nav a:hover {
-    color: black;
-    background:#fffdaf;
-}
-
-.actual {
-    background:#8063ff;
-}
-
-#buscador {
-    background: #dad2ff;
-    border: solid 1px black;
-    border-radius: 10px;
-    width: 500px;
-}
-
-#buscador form div {
-    display: flex;
-    justify-content: space-around;
-    text-align:justify;
-}
-
-/* boton del buscador */
-
-.boton {
-    margin:10px;
-    padding:2px;
-}
-
-/* coches en index */
-
-.coches_venta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.coche {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 20px;
-    width: 600px;
-    background: #493d9e;
-}
-
-.coche img {
-    border-radius: 10px;
-}
-
-.coche ul {
-    background: #dad2ff;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* noticias en index */
-
-#noticias {
-    grid-column: 2/3;
-    grid-row: 3/5;
-}
-
-.noticia {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    margin: 0 100px;
-}
-
-.noticia_img {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-}
-
-.noticia_texto {
-    width: 800px;
-    text-align: justify;
-    margin: 0 20px;
-}
-
-/*  footer */
 
 footer {
     background: black;
-    color:white;
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    grid-template-areas: "faviso ftext fsocial";
-}
-
-.footer_text{
-    grid-area: ftext;
-    line-height: 50px;
-}
-
-.footer_social {
-    grid-area: fsocial;
+    color: white;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-}
-
-.footer_aviso {
-    grid-area: faviso;
-    line-height: 50px;
 }
 
 footer img {
     background: white;
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    margin: auto;
 }
 
-/* producto */
-
-#galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin: 20px;
+footer a {
+    margin: 5px;
 }
 
-.coche_restaurado{
+h1, h2, h3 {
+    display: block;
+    padding: 30px;
+    text-align: center;
+}
+
+nav ul {
     display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-    justify-content: space-evenly;
-    gap: 30px;
-    background: #493d9e;
-    border-radius: 10px;
-    border: 1px solid black;
-    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
     color: white;
 }
 
-.coche_restaurado img {
-    width: 300px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
+nav a {
+    padding: 16px 12px;
+    background: #6666ff;
+    display: block;
 }
 
-#presupuesto_form{
-    background: #dad2ff;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10vh;
-    border: 1px solid black;
-    border-radius: 10px;
+nav a:hover {
+    background: #3333cc;
 }
 
-.cajapresu {
+.actual {
+    background: #ff99cc;
+
+}
+
+.galeria {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-.cajapresu ul {
-    margin: 30px;
+.galeria img{
+    display: block;
+    margin: 20px;
 }
 
-.cajapresu li {
-    margin: 10px;
+.aboutus {
+    width: 80%;
+    margin: auto;
 }
 
-.botones_form {
-    margin: 10px;
+.buscador,.presupuesto{
+    width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    background: #9999ff;
+}
+
+.buscador div,.presupuesto div {
     display: flex;
     justify-content: space-evenly;
+    margin: 10px;
 }
 
-.contacto{
+.buscador li,.presupuesto li {
+    margin: 10px;
+}
+
+.presupuesto {
+    width: 440px;
+}
+
+.noticia {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.noticia_texto {
+    width: 80%;
+    margin: auto 10px;
+}
+
+.noticia_img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-
-}
-
-.contacto img{
-    width: 1200px;
-    height: auto;
-    margin: 40px auto 40px;
+    gap: 10px;
+    margin-bottom: 20px;
 }

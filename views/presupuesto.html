@@ -15,89 +15,94 @@
         <title>Coches Clásicos | Compra y venta de vehículos históricos</title>
     </head>
     <body>
+        <div class="wrapper">
+            <header><h1>Coches Clásicos</h1></header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a class="actual" href="#">Presupuesto</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section>
+
+                    <h2>Formulario de solicitud de presupuesto</h2>
         
-        <header><h1>Coches Clásicos</h1></header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a class="actual" href="#">Presupuesto</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                    <div class="presupuesto">
+                        <form>
+                            <div>
+                                <ul>
+                                    <li><label for="nombre">Nombre</label></li>
+                                    <li><label for="email">E-Mail:</label></li>
+                                    <li><label for="telefono">Teléfono:</label></li>
+                                    <li>Información adicional:</li>
+                                </ul>
+                                <ul>
+                                    <li><input type="text" id="nombre" pattern="[A-Za-z]*\s?[A-Za-z]*\s?[A-Za-z]*" required></li>
+                                    <li><input type="email" id="email" pattern="[^\s]+@[^\s]+[.][A-Za-z]{2,}" required></li>
+                                    <li><input type="tel" id="telefono" pattern="\d{9}" required></li>
+                                    <li><textarea cols="35" rows="6"></textarea></li>
+                                </ul>
+                            </div>
+                            <div>
+                                Acepto las<a href="../media/pdf/politicaPrivacidadDatos.pdf" target="_blank">políticas de privacidad</a> de la empresa
+                                <input type="checkbox" required>
+                            </div>
+                            <div>
+                                <input class="boton" type="submit" value="Enviar">
+                                <input class="boton" type="reset" value="Borrar">
+                            </div>
+                        </form>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Formulario de solicitud de presupuesto</h2>
+                <section id="noticias">
+                    <h2>Noticias</h2>
+                    
+                    <h3>Título noticia 1</h3>
+                    <div class="noticia">
+                        <div class="noticia_texto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tenetur magni voluptates similique quis officia in, delectus nobis velit distinctio aut maxime dolore atque, dolorem cum iste perspiciatis explicabo rerum!</p><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum, est reprehenderit inventore accusamus necessitatibus esse voluptatibus magni. Ea laborum amet provident accusantium temporibus sit impedit sapiente ab hic nesciunt.</p><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio ut est cupiditate, harum excepturi veritatis debitis animi provident libero? Aliquid nulla corrupti delectus ipsam nobis ex aperiam aut consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi dolorum accusantium dicta impedit vitae, velit, distinctio nemo expedita optio quisquam architecto quae itaque libero repellat, molestias officia exercitationem laudantium.</p>
+                        </div>
+                        <div class="noticia_img">Caja fotografía</div>
+                    </div>
+                    
+                    <h3>Título noticia 2</h3>
 
-            <form id="presupuesto_form">
-                <div class="cajapresu">
-                    <ul>
-                        <li>Nombre:</li>
-                        <li>E-Mail:</li>
-                        <li>Teléfono:</li>
-                        <li>Información adicional:</li>
-                    </ul>
-                    <ul>
-                        <li><input type="text" pattern="[A-Za-z]*\s?[A-Za-z]*\s?[A-Za-z]*" required></li>
-                        <li><input type="email" pattern="[^\s]+@[^\s]+[.][A-Za-z]{2,}" required></li>
-                        <li><input type="tel" pattern="\d{9}" required></li>
-                        <li><textarea cols="35" rows="6"></textarea></li>
-                    </ul>
-                </div>
-                <div>
-                    Acepto las <a href="../media/pdf/politicaPrivacidadDatos.pdf" target="_blank">políticas de privacidad</a> de la empresa
-                    <input type="checkbox" required>
-                </div>
-                <div>
-                    <input class="boton" type="submit" value="Enviar">
-                    <input class="boton" type="reset" value="Borrar">
-                </div>
-            </form>
-        </section>
+                    <div class="noticia">
+                        <div class="noticia_img">Caja fotografía</div>
+                        <div class="noticia_texto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum, est reprehenderit inventore accusamus necessitatibus esse voluptatibus magni. Ea laborum amet provident accusantium temporibus sit impedit sapiente ab hic nesciunt.</p><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatibus. Aperiam laborum exercitationem distinctio illum vitae, tempora cum nulla numquam sunt porro natus. Voluptate ducimus odio quaerat, possimus quasi temporibus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed magni repellendus molestiae fuga deserunt quibusdam debitis aspernatur aliquam aliquid maiores, iure possimus aut perspiciatis quasi ullam ab atque impedit ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores quidem veritatis assumenda ratione tempore aliquam eveniet. Ratione, ad nam aspernatur ipsa labore vel minima possimus laborum voluptate aperiam delectus.</p>
+                        </div>
+                    </div>
 
-        <section id="noticias">
-            <h2>Noticias</h2>
-            
-            <h3>Título noticia 1</h3>
-            <div class="noticia">
-                <div class="noticia_texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tenetur magni voluptates similique quis officia in, delectus nobis velit distinctio aut maxime dolore atque, dolorem cum iste perspiciatis explicabo rerum!</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum, est reprehenderit inventore accusamus necessitatibus esse voluptatibus magni. Ea laborum amet provident accusantium temporibus sit impedit sapiente ab hic nesciunt.</p><br>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio ut est cupiditate, harum excepturi veritatis debitis animi provident libero? Aliquid nulla corrupti delectus ipsam nobis ex aperiam aut consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi dolorum accusantium dicta impedit vitae, velit, distinctio nemo expedita optio quisquam architecto quae itaque libero repellat, molestias officia exercitationem laudantium.</p>
-                </div>
-                <div class="noticia_img">Caja fotografía</div>
-            </div>
-            
-            <h3>Título noticia 2</h3>
+                    <h3>Título noticia 3</h3>
 
-            <div class="noticia">
-                <div class="noticia_img">Caja fotografía</div>
-                <div class="noticia_texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum, est reprehenderit inventore accusamus necessitatibus esse voluptatibus magni. Ea laborum amet provident accusantium temporibus sit impedit sapiente ab hic nesciunt.</p><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatibus. Aperiam laborum exercitationem distinctio illum vitae, tempora cum nulla numquam sunt porro natus. Voluptate ducimus odio quaerat, possimus quasi temporibus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed magni repellendus molestiae fuga deserunt quibusdam debitis aspernatur aliquam aliquid maiores, iure possimus aut perspiciatis quasi ullam ab atque impedit ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores quidem veritatis assumenda ratione tempore aliquam eveniet. Ratione, ad nam aspernatur ipsa labore vel minima possimus laborum voluptate aperiam delectus.</p>
-                </div>
-            </div>
+                    <div class="noticia">
+                        <div class="noticia_texto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ad nihil distinctio nulla corporis quisquam aspernatur perferendis adipisci, alias esse et reiciendis. Consequuntur ut, porro facilis voluptates soluta voluptatem voluptate.</p><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non sequi necessitatibus impedit placeat earum libero hic eius dolorem incidunt, enim ex excepturi reprehenderit provident cumque ad neque fugiat architecto?</p><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo eos corporis eaque ad dolor. Veniam illum dolores, optio beatae corrupti explicabo, dolorem aspernatur hic quae consequuntur unde natus fugit!</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
-            <h3>Título noticia 3</h3>
-
-            <div class="noticia">
-                <div class="noticia_texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ad nihil distinctio nulla corporis quisquam aspernatur perferendis adipisci, alias esse et reiciendis. Consequuntur ut, porro facilis voluptates soluta voluptatem voluptate.</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non sequi necessitatibus impedit placeat earum libero hic eius dolorem incidunt, enim ex excepturi reprehenderit provident cumque ad neque fugiat architecto?</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo eos corporis eaque ad dolor. Veniam illum dolores, optio beatae corrupti explicabo, dolorem aspernatur hic quae consequuntur unde natus fugit!</p>
+            <footer>
+                <div><a href="../media/pdf/avisolegal.pdf" target="_blank">Aviso legal</a></div>
+                <div>© 2025 Coches Clásicos | Calle Alonso Cano 44, 28003</div>
+                <div class="footer_social">
+                    <a href="https://www.instagram.com/"><img src="../media/images/instagram.png" width="64" height="64" alt="logo instagram"></a>
+                    <a href="https://www.youtube.com/"><img src="../media/images/youtube.png" width="64" height="64" alt="logo youtube"></a>
+                    <a href="https://www.x.com/"><img src="../media/images/xtwitter.png" width="64" height="64" alt="logo x"></a>
                 </div>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="footer_text">© 2025 Coches clásicos | Calle Alonso Cano 44, 28003</div>
-            <div class="footer_aviso"><a target="_blank" href="./media/pdf/avisolegal.pdf">Aviso legal</a></div>
-            <div class="footer_social">
-                <a href="https://www.instagram.com/"><img src="../media/images/instagram.png" width="512" height="512" alt="logo instagram"></a>
-                <a href="https://www.youtube.com/"><img src="../media/images/youtube.png" width="512" height="512" alt="logo youtube"></a>
-                <a href="https://www.x.com/"><img src="../media/images/xtwitter.png" width="512" height="512" alt="logo x"></a>
-            </div>
-            
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>

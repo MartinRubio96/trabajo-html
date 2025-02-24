@@ -16,12 +16,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <!-- HEADER -->
-
             <header><h1>Coches Clásicos</h1></header>
-
-            <!-- NAV -->
-
             <nav>
                 <ul>
                     <li><a class="actual" href="#">Inicio</a></li>
@@ -31,123 +26,108 @@
                 </ul>
             </nav>
 
-            <!-- MAIN -->
-            
             <main>
-
-                <section class="aboutus">
-                    
-                    <h2>¿Quienes somos?</h2>
-                    
-                    Somos una empresa de apasionados de los coches clásicos, dedicados a la restauración y venta
-                    de vehículos para coleccionistas.
-                </section>
                 
-                <section id="buscador">
-                    <h2>Buscador de vehículos</h2>
-                    <form>
-                        <div>
-                            <ul>
-                                <li>Modelo:</li>
-                                <li>Marca:</li>
-                                <li>Carroceria:</li>
-                                <li>Precio:</li>
-                                <li>Año:</li>
-                            </ul>
-                            <ul>
-                                <li><input type="text" name="modelo"></li>
-                                <li><input type="text" name="marca"></li>
-                                <li><select name="carroceria">
-                                    <option value="sedan">Sedan</option>
-                                    <option value="coupe">Coupé</option>
-                                    <option value="berlina">Berlina</option>
-                                    <option value="suv">SUV</option>
-                                </select></li>
-                                <li>Min:<input type="text" size="6" name="precio_min"> Max:<input type="text" size="6" name="precio_max"></li>
-                                <li><input type="text" name="año" size="4"></li>
-                            </ul>
-                        </div>
-                        <input type="submit" value="Buscar" class="boton">
-                        <input type="reset" value="Borrar" class="boton">
-                    </form>
-                </section>
-
                 <section>
-                    <h2>Coches en venta</h2>
-                    <div class="coches_venta">
-                        <div class="coche">
-                            <img src="./media/images/Bmw_e23_v_sst.jpg" width="320" height="164" alt="BMW e23">
-                            <ul>
-                                <li>Modelo: BMW E23</li>
-                                <li>Km hechos: 60.000</li>
-                                <li>Precio: 8.000 €</li>
-                                <li>Carrocería: sedan</li>
-                                <li>Nº puertas: 5</li>
-                                <li>Potencia: 100 cv</li>
-                                <li>Capacidad motor: 800cc</li>
-                                <li>Color: Gris claro</li>
-                            </ul>
+                    <h2>Buscador de coches</h2>
+                    <div class="buscador">
+                        <form>
+                            <div>
+                                <ul>
+                                    <li><label for="marca">Marca:</label></li>
+                                    <li><label for="modelo">Modelo:</label></li>
+                                    <li><label for="año">Año:</label></li>
+                                    <li>Precio:</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <select id="marca">
+                                            <option value="fiat">Fiat</option>
+                                            <option value="mercedes">Mercedes</option>
+                                            <option value="bmw">BMW</option>
+                                            <option value="ford">Ford</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </li>
+                                    <li><input type="text" id="modelo"></li>
+                                    <li><input type="text" id="año"></li>
+                                    <li><label for="precio_min">Min:</label> <input type="text" id="precio_min" size="2"> <label for="precio_max">Max:</label> <input type="text" id="precio_max" size="2"></li>
+                                </ul>
+                            </div>
+                        
+                            <div>
+                                <input type="submit">
+                                <input type="reset">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <h2>Selección de nuestros coches</h2>
+                    <div class="galeria">
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/audi-100-1969.jpg" alt="audi-100 1969">
+                            Audi 100 - 1969
                         </div>
-    
-                        <div class="coche">
-                            <img src="./media/images/audi-100-1969.jpg" width="320" height="180" alt="Audi 100">
-                            <ul>
-                                <li>Modelo: Audi 100</li>
-                                <li>Km hechos: 100.000</li>
-                                <li>Precio: 6.000 €</li>
-                                <li>Carrocería: sedan</li>
-                                <li>Nº puertas: 5</li>
-                                <li>Potencia: 90 cv</li>
-                                <li>Capacidad motor: 800cc</li>
-                                <li>Color: Gris</li>
-                            </ul>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/Bmw_e23_v_sst.jpg" alt="bmw e23 1980">
+                            BMW E23 - 1980
                         </div>
-    
-                        <div class="coche">
-                            <img src="./media/images/ford-mustang-gt-390-fastback-196.jpg" width="320" height="213" alt="Mustang gt">
-                            <ul>
-                                <li>Modelo: Mustang GT</li>
-                                <li>Km hechos: 120.000</li>
-                                <li>Precio: 8.500 €</li>
-                                <li>Carrocería: sport</li>
-                                <li>Nº puertas: 3</li>
-                                <li>Potencia: 140 cv</li>
-                                <li>Capacidad motor: 1.100cc</li>
-                                <li>Color: Rojo</li>
-                            </ul>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/delorean_dcm12.jpg" alt="delorean dmc12 1982">
+                            Delorean DMC12 - 1982
                         </div>
-    
-                        <div class="coche">
-                            <img src="./media/images/Mercedes250SE.jpg" width="320" height="213" alt="Mercedes 250e">    
-                            <ul>
-                                <li>Modelo: Mercedes 250e</li>
-                                <li>Km hechos: 70.000</li>
-                                <li>Precio: 9.000 €</li>
-                                <li>Carrocería: sedan</li>
-                                <li>Nº puertas: 3</li>
-                                <li>Potencia: 95 cv</li>
-                                <li>Capacidad motor: 900cc</li>
-                                <li>Color: Blanco</li>
-                            </ul>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/fiat_124_1968.jpg" alt="fiat 124 1968">
+                            Fiat 124 - 1968
+                        </div>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/ford-mustang-gt-390-fastback-196.jpg" alt="mustang gt 390 1968">
+                            Mustang GT - 1968
+                        </div>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/jaguar-mk10-1966.jpg" alt="jaguar mk10 1966">
+                            Jaguar MK10 - 1966
+                        </div>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/mercedes_sl500_1982.jpg" alt="mercedes sl500 1982">
+                            Mercedes SL500 - 1982
+                        </div>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/Mercedes250SE.jpg" alt="mercedes 250se 1966">
+                            Mercedes 250SE - 1966
+                        </div>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/Porsche_356_1962.jpg" alt="porsche 356 1962">
+                            Porsche 356 - 1962
+                        </div>
+                        <div class="imagen">
+                            <img width="320" height="164" src="./media/images/seat-600.jpg" alt="seat 600 1970">
+                            Seat 600 - 1970
                         </div>
                     </div>
                 </section>
+                <section>
+                    <h2>¿Quiénes somos?</h2>
+                    <div class="aboutus">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptate accusantium consectetur voluptates nobis hic repudiandae ex, enim perferendis a nulla asperiores numquam iure tempora et illo optio ea!<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptate accusantium consectetur voluptates nobis hic repudiandae ex, enim perferendis a nulla asperiores numquam iure tempora et illo optio ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quaerat soluta excepturi ut ullam laborum aperiam porro ad! Porro vero pariatur reiciendis fuga nobis dolore aperiam amet enim eum? Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident totam, error illo qui sequi ea inventore id repellat! Corrupti vel in molestias nulla voluptatum non inventore dolor sed quas.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptate accusantium consectetur voluptates nobis hic repudiandae ex, enim perferendis a nulla asperiores numquam iure tempora et illo optio ea!<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptate accusantium consectetur voluptates nobis hic repudiandae ex, enim perferendis a nulla asperiores numquam iure tempora et illo optio ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt eveniet, aliquam velit recusandae consequatur ut magni soluta id optio officia maiores rem itaque labore veniam libero dolor asperiores? Similique.<br><br>
+                    </div>
+                    
+                </section>
+
             </main>
+            <footer>
+                <div><a href="./media/pdf/avisolegal.pdf" target="_blank">Aviso legal</a></div>
+                <div>© 2025 Coches Clásicos | Calle Alonso Cano 44, 28003</div>
+                <div class="footer_social">
+                    <a href="https://www.instagram.com/"><img src="./media/images/instagram.png" width="64" height="64" alt="logo instagram"></a>
+                    <a href="https://www.youtube.com/"><img src="./media/images/youtube.png" width="64" height="64" alt="logo youtube"></a>
+                    <a href="https://www.x.com/"><img src="./media/images/xtwitter.png" width="64" height="64" alt="logo x"></a>
+                </div>
+            </footer>
         </div>
-
-        
-
-        <!-- FOOTER -->
-        
-        <footer>
-            <div class="footer_text">© 2025 Coches clásicos | Calle Alonso Cano 44, 28003</div>
-            <div class="footer_aviso"><a target="_blank" href="./media/pdf/avisolegal.pdf">Aviso legal</a></div>
-            <div class="footer_social">
-                <a href="https://www.instagram.com/"><img src="./media/images/instagram.png" width="512" height="512" alt="logo instagram"></a>
-                <a href="https://www.youtube.com/"><img src="./media/images/youtube.png" width="512" height="512" alt="logo youtube"></a>
-                <a href="https://www.x.com/"><img src="./media/images/xtwitter.png" width="512" height="512" alt="logo x"></a>
-            </div>
-            
-        </footer>
     </body>
 </html>
